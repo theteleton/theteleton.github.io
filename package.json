@@ -1,7 +1,7 @@
 {
   "name": "mywebsite",
   "version": "0.1.0",
-  "homepage": "https://theteleton.github.io/mywebsite",
+  "homepage": "https://theteleton.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
