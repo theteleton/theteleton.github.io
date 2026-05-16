@@ -3,11 +3,15 @@ import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const LINKS = [
-  { to: '/', label: 'Home' },
-  { to: '/about', label: 'About' },
-  { to: '/projects', label: 'Projects' },
-  { to: '/blog', label: 'Blog' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/',              label: 'Home' },
+  { to: '/about',         label: 'About' },
+  { to: '/education',     label: 'Education' },
+  { to: '/experience',    label: 'Experience' },
+  { to: '/research',      label: 'Research' },
+  { to: '/projects',      label: 'Projects' },
+  { to: '/achievements',  label: 'Achievements' },
+  { to: '/blog',          label: 'Blog' },
+  { to: '/contact',       label: 'Contact' },
 ];
 
 export default function Navbar() {

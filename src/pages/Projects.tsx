@@ -66,11 +66,11 @@ export default function Projects() {
 
       <div className="container">
         <section className="page-header">
-          <span className="section-badge">Work</span>
-          <h1 className="section-title">Projects &amp; Research</h1>
+          <span className="section-badge">Projects</span>
+          <h1 className="section-title">Things I've built</h1>
           <p className="section-sub">
-            A selection of things I've built, researched, or contributed to.
-            Update links and descriptions with your real projects.
+            A selection of software projects, research tools, and open-source contributions.
+            Update links with your real repositories.
           </p>
         </section>
 

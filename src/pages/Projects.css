@@ -76,13 +76,8 @@
 
 .proj-link:hover { color: #fff; }
 
-.proj-link-live {
-  color: var(--gold-1);
-}
-
-.proj-link-live:hover {
-  color: var(--gold-2);
-}
+.proj-link-live { color: var(--gold-1); }
+.proj-link-live:hover { color: var(--gold-2); }
 
 @media (max-width: 900px) {
   .projects-grid { grid-template-columns: repeat(2, 1fr); }

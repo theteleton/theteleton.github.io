@@ -36,8 +36,11 @@ export default function About() {
           <span className="section-badge">About Me</span>
           <h1 className="section-title">The person behind the work</h1>
           <p className="section-sub">
-            Researcher, developer, and competitive programmer based in Europe.
-            I love solving hard problems — on paper and in code.
+            Researcher, developer, and competitive programmer based in Slovenia.
+            I love solving hard problems — on paper and in code. See the{' '}
+            <a href="#/education" style={{ color: 'var(--gold-1)' }}>Education</a>,{' '}
+            <a href="#/experience" style={{ color: 'var(--gold-1)' }}>Experience</a>, and{' '}
+            <a href="#/research" style={{ color: 'var(--gold-1)' }}>Research</a> pages for more.
           </p>
         </section>
 
