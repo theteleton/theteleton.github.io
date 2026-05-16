@@ -1,5 +1,68 @@
 import React from 'react';
+import {
+  SiGithub, SiLinkedin, SiGooglescholar, SiResearchgate,
+  SiMedium, SiCodeforces,
+} from 'react-icons/si';
 import './About.css';
+
+const PROFILES = [
+  {
+    icon: <SiGithub />,
+    label: 'GitHub',
+    handle: '@theteleton',
+    desc: 'Source code & open-source projects.',
+    href: 'https://github.com/theteleton',
+    gradient: 'var(--gradient-main)',
+  },
+  {
+    icon: <SiLinkedin />,
+    label: 'LinkedIn',
+    handle: 'Ilija Tavchioski',
+    desc: 'Professional background & networking.',
+    href: '#',
+    gradient: 'linear-gradient(135deg, #0077b5 0%, #00a0dc 100%)',
+  },
+  {
+    icon: <SiGooglescholar />,
+    label: 'Google Scholar',
+    handle: 'Ilija Tavchioski',
+    desc: 'Academic publications & citations.',
+    href: '#',
+    gradient: 'linear-gradient(135deg, #4285f4 0%, #34a853 100%)',
+  },
+  {
+    icon: <SiResearchgate />,
+    label: 'ResearchGate',
+    handle: 'Ilija Tavchioski',
+    desc: 'Research projects & collaborations.',
+    href: '#',
+    gradient: 'linear-gradient(135deg, #00d2b6 0%, #00a89d 100%)',
+  },
+  {
+    icon: <SiMedium />,
+    label: 'Medium',
+    handle: '@theteleton',
+    desc: 'Articles, tutorials & writing.',
+    href: '#',
+    gradient: 'linear-gradient(135deg, #333 0%, #555 100%)',
+  },
+  {
+    icon: <SiCodeforces />,
+    label: 'Codeforces',
+    handle: 'theteleton',
+    desc: 'Competitive programming & contests.',
+    href: '#',
+    gradient: 'linear-gradient(135deg, #1890ff 0%, #096dd9 100%)',
+  },
+  {
+    icon: <span className="sicris-text">Si</span>,
+    label: 'SICRIS',
+    handle: 'Ilija Tavchioski',
+    desc: 'Slovenian research information system.',
+    href: '#',
+    gradient: 'linear-gradient(135deg, #667eea 0%, #f5576c 100%)',
+  },
+];
 
 const SKILLS = [
   {
@@ -78,6 +141,32 @@ export default function About() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Social profiles */}
+        <section className="about-profiles-section">
+          <span className="section-badge">Find me on</span>
+          <h2 className="section-title">Social &amp; Academic profiles</h2>
+          <div className="about-profiles-grid">
+            {PROFILES.map(({ icon, label, handle, desc, href, gradient }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card about-profile-card"
+              >
+                <div className="about-profile-icon" style={{ background: gradient }}>
+                  {icon}
+                </div>
+                <div className="about-profile-info">
+                  <span className="about-profile-label">{label}</span>
+                  <span className="about-profile-handle">{handle}</span>
+                  <p className="about-profile-desc">{desc}</p>
+                </div>
+              </a>
+            ))}
           </div>
         </section>
 

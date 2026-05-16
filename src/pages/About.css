@@ -64,6 +64,70 @@
   color: var(--text-muted);
 }
 
+/* Social profiles */
+.about-profiles-section {
+  padding-bottom: 4rem;
+}
+
+.about-profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.about-profile-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 1.4rem;
+  cursor: pointer;
+}
+
+.about-profile-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.sicris-text {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.about-profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.about-profile-label {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.about-profile-handle {
+  font-size: 0.78rem;
+  color: var(--gold-1);
+  font-weight: 500;
+}
+
+.about-profile-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 0.25rem;
+}
+
 /* Skills */
 .skills-section { padding-bottom: 6rem; }
 
@@ -119,20 +183,16 @@
 /* Responsive */
 @media (max-width: 900px) {
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-profiles-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 768px) {
   .page-header { padding-top: calc(var(--nav-height) + 2.5rem); }
 
-  .bio-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .bio-stats {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+  .bio-grid { grid-template-columns: 1fr; }
+  .bio-stats { grid-template-columns: repeat(2, 1fr); }
   .skills-grid { grid-template-columns: 1fr 1fr; }
+  .about-profiles-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 480px) {
