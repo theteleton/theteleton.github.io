@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   SiGithub, SiLinkedin, SiGooglescholar, SiResearchgate,
-  SiMedium, SiCodeforces,
+  SiMedium, SiCodeforces, SiX,
 } from 'react-icons/si';
 import './Footer.css';
 
@@ -13,6 +13,7 @@ const SOCIAL = [
   { icon: <SiResearchgate />,  label: 'ResearchGate',  href: '#' },
   { icon: <SiMedium />,        label: 'Medium',        href: '#' },
   { icon: <SiCodeforces />,    label: 'Codeforces',    href: '#' },
+  { icon: <SiX />,            label: 'X',             href: '#' },
 ];
 
 export default function Footer() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   SiGithub, SiLinkedin, SiGooglescholar, SiResearchgate,
-  SiMedium, SiCodeforces,
+  SiMedium, SiCodeforces, SiX,
 } from 'react-icons/si';
 import './About.css';
 
@@ -53,6 +53,14 @@ const PROFILES = [
     desc: 'Competitive programming & contests.',
     href: '#',
     gradient: 'linear-gradient(135deg, #1890ff 0%, #096dd9 100%)',
+  },
+  {
+    icon: <SiX />,
+    label: 'X',
+    handle: '@theteleton',
+    desc: 'Thoughts, updates & quick takes.',
+    href: '#',
+    gradient: 'linear-gradient(135deg, #000 0%, #333 100%)',
   },
   {
     icon: <span className="sicris-text">Si</span>,

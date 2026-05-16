@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   SiGithub, SiLinkedin, SiGooglescholar, SiResearchgate,
-  SiMedium, SiCodeforces,
+  SiMedium, SiCodeforces, SiX,
 } from 'react-icons/si';
 import { HiMail } from 'react-icons/hi';
 import './Contact.css';
@@ -63,6 +63,14 @@ const PROFILES: Profile[] = [
     desc: 'Competitive programming — algorithms, contests, solutions.',
     href: '#',
     gradient: 'linear-gradient(135deg, #1890ff 0%, #096dd9 100%)',
+  },
+  {
+    icon: <SiX />,
+    label: 'X',
+    handle: '@theteleton',
+    desc: 'Thoughts, updates & quick takes.',
+    href: '#',
+    gradient: 'linear-gradient(135deg, #000 0%, #333 100%)',
   },
   {
     icon: <span className="sicris-text">Si</span>,
